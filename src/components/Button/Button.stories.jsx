@@ -3,6 +3,19 @@ import Button from "./Button";
 export default {
   title: "Common/Button",
   component: Button,
+  argTypes: {
+    color: {
+      options: ["primary", "default", "danger"],
+      control: { type: "select" },
+    },
+    size: {
+      options: ["sm", "base", "lg"],
+      control: { type: "radio" },
+    },
+    backgroundColor: {
+      control: { type: "color" },
+    },
+  },
 };
 
 export const HelloButton = () => <Button>Hello World!</Button>;
