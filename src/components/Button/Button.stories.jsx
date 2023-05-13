@@ -20,3 +20,18 @@ export const PrimaryLarge = () => (
     Large
   </Button>
 );
+const Template = (args) => <Button {...args} />;
+export const DefaultArgs = Template.bind({});
+DefaultArgs.args = {
+  children: "Default",
+};
+export const PrimaryArgs = Template.bind({});
+PrimaryArgs.args = {
+  children: "Default",
+  color: "primary",
+};
+export const PrimaryLargeArgs = Template.bind({});
+PrimaryLargeArgs.args = {
+  ...PrimaryArgs.args,
+  size: "lg",
+};
