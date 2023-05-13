@@ -9,3 +9,4 @@ export const HelloButton = () => <Button>Hello World!</Button>;
 export const ClickButton = () => <Button>Click!</Button>;
 export const Default = () => <Button>Default</Button>;
 export const Primary = () => <Button color="primary">Primary</Button>;
+export const Danger = () => <Button color="danger">Danger</Button>;
