@@ -19,8 +19,8 @@ export default {
 const something = action("something");
 
 const Template = (args) => {
-  const handleClick = () => {
-    something();
+  const handleClick = (e) => {
+    something(e, "test");
   };
   return <Button {...args} handleClick={handleClick} />;
 };
