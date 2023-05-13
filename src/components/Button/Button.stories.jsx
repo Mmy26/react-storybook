@@ -1,5 +1,6 @@
 import { action } from "@storybook/addon-actions";
 import Button from "./Button";
+import { linkTo } from "@storybook/addon-links";
 
 export default {
   title: "Common/Test",
@@ -19,10 +20,7 @@ export default {
 const something = action("something");
 
 const Template = (args) => {
-  const handleClick = (e) => {
-    something(e, "test");
-  };
-  return <Button {...args} handleClick={handleClick} />;
+  return <Button {...args} handleClick={linkTo("common/Button", "Primary")} />;
 };
 export const DefaultArgs = Template.bind({});
 DefaultArgs.args = {
