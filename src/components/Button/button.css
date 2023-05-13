@@ -6,3 +6,6 @@ button {
   cursor: pointer;
   display: inline-block;
 }
+.default {
+  background-color: #6c757d;
+}
